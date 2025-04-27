@@ -1,0 +1,30 @@
+web-traffic-forecasting-lstm/
+│
+├── data/
+│   ├── raw/
+│   │   └── web_traffic_sample.csv   # original CSV file
+│   └── processed/
+│       └── scaled_data.npy          # (optional) preprocessed data
+│
+├── notebooks/
+│   ├── 01_EDA_and_Feature_Engineering.ipynb    # ARIMA and traditional model notebook
+│   ├── 02_LSTM_Modeling_and_Forecasting.ipynb   # deep learning LSTM model notebook
+│
+├── models/
+│   └── lstm_web_traffic_model.h5    # saved Keras model
+│
+├── src/
+│   ├── data_preprocessing.py        # script for cleaning and scaling
+│   ├── sequence_generator.py        # script to create sequences
+│   ├── model_building.py             # script for building/training LSTM model
+│   ├── evaluation_metrics.py         # evaluation functions (MAE, RMSE, etc.)
+│
+├── outputs/
+│   ├── plots/
+│   │   ├── web_traffic_over_time.png
+│   │   ├── loss_curve.png
+│   │   └── actual_vs_predicted.png
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
