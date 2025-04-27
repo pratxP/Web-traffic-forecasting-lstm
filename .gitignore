@@ -1,0 +1,16 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+
+# Model weights
+/models/*.h5
+
+# Environment files
+.env
+.venv
+
+# Data files
+/data/processed/*
